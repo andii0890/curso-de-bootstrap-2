@@ -38,7 +38,7 @@
               <a class="nav-link" href="#become-a-speaker">Conviértete en orador</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+              <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modal-purchase">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
                       Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!
                     </p>
                     <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                    <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                    <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modal-purchase">Comprar tickets</button>
                   </div>
                 </div>
               </div>
@@ -165,7 +165,7 @@
     <!-- /Place-time-->
 
     <!-- Become a speaker-->
-    <section id="become-a-speaker" class="py-3">
+    <section id="become-a-speaker" class="py-5">
       <div class="container">
         <div class="row">
           <div class="col text-uppercase text-center">
@@ -173,14 +173,14 @@
             <h2>Orador</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-5 pb-3">
           <div class="col text-center">
             Anótate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>
             Cuéntanos de qué quieres hablar!
           </div>
         </div>
         <div class="row">
-          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
             <form>
               <div class="form-row">
                 <div class="form-group col-12 col-md-6">
@@ -198,7 +198,7 @@
                   </small>
                 </div>
               </div>
-              <div class="form-row">
+              <div class="form-row pb-3">
                 <div class="col">
                   <button type="button" class="btn btn-platzi btn-block">Enviar</button>
                 </div>                
@@ -237,6 +237,47 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <!-- Modal-->
+    <div class="modal fade" id="modal-purchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Introduce tu correo y tu contraseña</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Acepto términos y condiciones de la compra.</label>
+                  </div>
+                </div>
+              </div>
+              <div class="alert alert-info" role="alert">
+                Se enviará un correo electrónico para confirmar tu compra.
+              </div>
+            </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal-->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
