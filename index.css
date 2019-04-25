@@ -2,8 +2,45 @@
     color: #97c93e !important;
 }
 
+.btn-platzi {
+    background-color: #97c93e;
+    color: white !important;
+}
+
+.btn-platzi:hover {
+    background-color: #82ad36;
+}
+
 #header img {
-width: 80px;
+    width: 80px;
+}
+
+#main .carousel-inner img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(70%);
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
 }
 
 #footer {
